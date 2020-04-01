@@ -1,0 +1,59 @@
+/* Ana Carolina Alves */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 35px;
+}
+
+li {
+    line-height: 150%;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #cdf0ff;
+}
+
+.red_border {
+    background-color: #0066aa;
+    border: 5px solid red;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    height: 480px;
+    padding: 10px;
+    width: calc(25% - 10px);
+    margin: 10px 10px 10px 0px;
+}
+
+main {
+    float: left;
+    height: 480px;
+    width: 75%;
+    margin: 10px 0px;
+    padding: 15px;
+    background-color: white;
+    border: 5px solid black;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
