@@ -1,0 +1,41 @@
+/* Ana Carolina Alves */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #d5e0e3;
+}
+
+header {
+    padding: 50px;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: #5b9eb0;
+}
+
+hr {
+    color: #cadee3;
+}
+
+.between {
+    float: left;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.filme {
+    padding: 15px;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.filme h1 {
+    color: #5b9eb0;
+}
