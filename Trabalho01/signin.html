@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">          
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Login</title>
+</head>
+<body>
+    
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" class="d-inline-block align-top" alt="Platinum Games" height="40px" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Games">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Sign in -->
+        <div class="container-fluid nav-space section-content">
+            <h2 class="text-center">Platinum Account</h2>
+        </div>
+        <div class="container-fluid section-content">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-margin center-max-width">
+                    <h3>Sign in</h3>
+                </div>
+                <div class="col-lg col-margin align-items-center">
+                    <form name="signin">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="emailInput" id="emailInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="passwordInput" id="passwordInput">
+                        </div>
+                        <div class="text-right">
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                            <button type="button" class="btn btn-primary" id="signin-btn">Sign in</button>
+                        </div>
+                    </form>   
+                    <br>
+                    <div class="row">
+                        <div class="col-1 icon">
+                            <a href="#">
+                                <img src="images/google.svg" width="30" height="30" alt="" loading="lazy">   
+                            </a>
+                        </div>  
+                        <div class="col">
+                            <p><a href="#">Sign in with Google</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-margin ">
+                    <div class="mx-auto d-block separator v-separator rounded"></div>
+                </div>
+                <div class="col-lg-3 center-max-width">
+                    <p>Don't have an account?<br><a href="#">Sign up now!</a></p>                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-3">
+        <div class="container-lg">
+            <div class="row justify-content-between">
+                <div class="col-s-12 col-md-3 col-margin">
+                    <a href="index.html">
+                        <img src="images/logo-footer.png" class="mx-auto d-block" alt="Platinum Games" height="30px" loading="lazy">
+                    </a>
+                </div>
+                <div class="col-s-12 col-md-3">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <a href="https://twitter.com/platinumgames">
+                                <img src="images/twitter.png" class="mx-auto d-block" alt="twitter" height="25px" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.youtube.com/user/platinumgames">
+                                <img src="images/youtube.png" class="mx-auto d-block" alt="youtube" height="25px" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col">                            
+                            <a href="https://store.steampowered.com/search/?developer=PlatinumGames">
+                                <img src="images/steam.png" class="mx-auto d-block" alt="steam" height="25px" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.instagram.com/platinumgames_official/">
+                                <img src="images/instagram.png" class="mx-auto d-block" alt="instagram" height="25px" loading="lazy">
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JS, Popper.js, and jQuery -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+     <script src="form-validation.js"></script>
+</body>
+</html>
