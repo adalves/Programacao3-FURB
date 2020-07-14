@@ -6,9 +6,9 @@ Ele fornece informações sobre os pokémon em si, assim como seus tipos e seus ata
 Para rodar:
 -instalar mariaDB;
 -rodar o script "pokemonAPI/pokemon.sql" que irá criar e popular um banco em mariaDB;
--em pokemonAPI/appsettings.json colocar seu id e senha do mariaDB;
--executar dotnet run dentro da pasta pokemonAPI;
--abrir front/index.html para ver o site.
+-em "pokemonAPI/appsettings.json" colocar seu id e senha do mariaDB;
+-executar "dotnet run" dentro da pasta pokemonAPI;
+-abrir "front/index.html" para ver o site.
 
 Especificação da API: https://pokemon19.docs.apiary.io/#
 GitHub: https://github.com/adalves/Programacao3-FURB/tree/master/Trabalho-final
