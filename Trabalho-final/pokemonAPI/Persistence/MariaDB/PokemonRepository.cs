@@ -147,7 +147,7 @@ namespace pokemonAPI.Persistence.MariaDB
             context.SaveChanges();
         }
         
-        public Dictionary<string,string> ListTypes(string id) 
+        public List<EffectivenessDTO> ListTypes(string id) 
         {
             Pokemon pokemon = context.Pokemon.SingleOrDefault(p => p.CdPoke.ToString().Equals(id));
 
@@ -171,12 +171,11 @@ namespace pokemonAPI.Persistence.MariaDB
                                 Effectiveness = (decimal)obj.NrEffectiveness
                             }).ToList();
 
-            Dictionary<string,string> result = new Dictionary<string,string>();
             for (int i = 0; i < type1.Count(); ++i) {
-                result.Add(type1[i].Type, (type1[i].Effectiveness * type2[i].Effectiveness).ToString());
+                type1[i].Effectiveness *= type2[i].Effectiveness;
             }
 
-            return result;
+            return type1;
         }
     }
 }

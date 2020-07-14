@@ -59,7 +59,7 @@ namespace pokemonAPI.Domain.Services
             repository.DeleteMove(nameMove, idPkmn);
         }
         
-        public Dictionary<string,string> ListTypes(string id) 
+        public List<EffectivenessDTO>  ListTypes(string id) 
         {
             return repository.ListTypes(id);
         }

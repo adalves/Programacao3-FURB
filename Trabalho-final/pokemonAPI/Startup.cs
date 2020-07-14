@@ -30,18 +30,26 @@ namespace pokemonAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {            
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+
             services.AddScoped<IPokemonService, PokemonService>();
 
             services.AddDbContext<PokemonContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
                 
             services.AddScoped<IPokemonRepository, PokemonRepository>();            
-            services.AddControllers();
+            services.AddControllers();     
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("MyPolicy");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -57,6 +65,7 @@ namespace pokemonAPI
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

@@ -908,11 +908,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\trabalho-final\\pokemonAPI\\pokemonAPI.csproj",
+      "projectUniqueName": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\Programação3\\Trabalho-final\\pokemonAPI\\pokemonAPI.csproj",
       "projectName": "pokemonAPI",
-      "projectPath": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\trabalho-final\\pokemonAPI\\pokemonAPI.csproj",
+      "projectPath": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\Programação3\\Trabalho-final\\pokemonAPI\\pokemonAPI.csproj",
       "packagesPath": "C:\\Users\\Ana\\.nuget\\packages\\",
-      "outputPath": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\trabalho-final\\pokemonAPI\\obj\\",
+      "outputPath": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\Programação3\\Trabalho-final\\pokemonAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

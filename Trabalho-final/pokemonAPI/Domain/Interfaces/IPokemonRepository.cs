@@ -17,6 +17,6 @@ namespace pokemonAPI.Domain.Interfaces
         List<MovesDTO> ListMoves(string id);
         void AddMove(string nameMove, string idPkmn);        
         void DeleteMove(string nameMove, string idPkmn);  
-        Dictionary<string,string> ListTypes(string id);
+        List<EffectivenessDTO> ListTypes(string id);
     }
 }

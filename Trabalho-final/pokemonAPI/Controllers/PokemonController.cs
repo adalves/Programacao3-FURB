@@ -20,6 +20,13 @@ namespace pokemonAPI.Controllers
             this.service = service;
         }
 
+        //List all pokemon
+        // GET: api/pokemon
+        [HttpOptions]
+        public ActionResult Options()
+        {
+            return Ok();
+        }
 
         //List all pokemon
         // GET: api/pokemon
@@ -123,12 +130,12 @@ namespace pokemonAPI.Controllers
         //Get type effectiveness by pokemon ID
         // GET: api/pokemon/5/types
         [HttpGet("{id}/types")]
-        public ActionResult GetTypes(string id)
+        public ActionResult<EffectivenessDTO> GetTypes(string id)
         {
             PokemonDTO found = service.GetByID(id);            
             if (found == null) return NotFound();
             
-            Dictionary<string,string> types = service.ListTypes(id);
+            List<EffectivenessDTO> types = service.ListTypes(id);
             return Ok(types);
         }   
     }

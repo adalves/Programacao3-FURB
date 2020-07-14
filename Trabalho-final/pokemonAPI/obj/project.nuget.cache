@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qlv7Jf5QoUqRkQeFqKVSZTMW2g4RYH61N+FsOn5WqygpleyFLk1HZcKmYXJQs9FisZoxDf2Mg72Vi5OrLLcJTw==",
+  "dgSpecHash": "65rwAlR5nSxPDoalyYgVGC+p9zQh6aBmgnLJsukAS7o3qTr+csVM1PxL/rVsXOa0XUN+MfGY0mkMt3A3U8cTug==",
   "success": true,
-  "projectFilePath": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\Trabalho-final\\pokemonAPI\\pokemonAPI.csproj",
+  "projectFilePath": "G:\\Ana\\Documents\\Courses\\Furb\\Programação III\\Programação3\\Trabalho-final\\pokemonAPI\\pokemonAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ana\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Ana\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
