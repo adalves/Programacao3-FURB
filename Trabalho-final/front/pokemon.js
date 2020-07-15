@@ -8,7 +8,7 @@ function getAllPokemon() {
     $.ajax({
         dataType:"json",
         type:"GET",
-        url: "https://localhost:5001/api/pokemon/",
+        url: "http://localhost:5000/api/pokemon/",
         contentType:"application/json; charset=utf-8"
     })
     .done(function(data) {
@@ -64,7 +64,7 @@ $("#modalBtn").click(function(){
     });
     console.log(values_array);
     $.ajax({
-        url:"https://localhost:5001/api/pokemon",
+        url:"http://localhost:5000/api/pokemon/",
         type:"POST",
         data:JSON.stringify(values_array),
         contentType:"application/json; charset=utf-8",
@@ -84,7 +84,7 @@ $('#modalEdit').on('show.bs.modal', function (event) {
     var recipient = button.data('recipient');
     var modal = $(this);
 
-    $.get("https://localhost:5001/api/pokemon/" + recipient)
+    $.get("http://localhost:5000/api/pokemon/" + recipient)
     .done(function(data) {
         pkmn = data;
         modal.find("#idInput").val(pkmn.id);
@@ -106,7 +106,7 @@ $("#modalEditBtn").click(function(){
     });
     console.log(values_array);
     $.ajax({
-        url:"https://localhost:5001/api/pokemon/" + values_array.id,
+        url:"http://localhost:5000/api/pokemon/" + values_array.id,
         type:"PUT",
         data:JSON.stringify(values_array),
         contentType:"application/json; charset=utf-8",
@@ -134,7 +134,7 @@ function getPokemon(id, modal) {
     $.ajax({
         dataType:"json",
         type:"GET",
-        url: "https://localhost:5001/api/pokemon/" + id,
+        url: "http://localhost:5000/api/pokemon/" + id,
         contentType:"application/json; charset=utf-8"
     })
     .done(function(data) {         
@@ -156,7 +156,7 @@ function getMoves(id, modal) {
     $.ajax({
         dataType:"json",
         type:"GET",
-        url: "https://localhost:5001/api/pokemon/" + id + "/moves",
+        url: "http://localhost:5000/api/pokemon/" + id + "/moves",
         contentType:"application/json; charset=utf-8"
     })
     .done(function(data) {      
@@ -183,7 +183,7 @@ function getTypeEffectiveness(id, modal) {
     $.ajax({
         dataType:"json",
         type:"GET",
-        url: "https://localhost:5001/api/pokemon/" + id + "/types",
+        url: "http://localhost:5000/api/pokemon/" + id + "/types",
         contentType:"application/json; charset=utf-8"
     })
     .done(function(data) {      
@@ -212,7 +212,7 @@ $('#modalDelete').on('show.bs.modal', function (event) {
 $("#modalDeleteBtn").click(function(){
     var id = $('#id').text();
     $.ajax({
-        url:"https://localhost:5001/api/pokemon/" + id,
+        url:"http://localhost:5000/api/pokemon/" + id,
         type:"DELETE"
     })
     .done(function( data ) {
